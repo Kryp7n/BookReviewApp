@@ -25,6 +25,7 @@
         android:layout_marginTop="16dp"
         android:text="Bookname"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/BookImage"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,6 +37,7 @@
         android:layout_marginLeft="22dp"
         android:text="Author"
         android:textSize="18sp"
+        android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/BookImage"
         app:layout_constraintTop_toBottomOf="@+id/BookName" />
 

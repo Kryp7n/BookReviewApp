@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/BookImage"
+        android:layout_width="94dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/BookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:text="Bookname"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/BookImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:text="Author"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/BookImage"
+        app:layout_constraintTop_toBottomOf="@+id/BookName" />
+
+    <TextView
+        android:id="@+id/BookRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:text="Rating: 4/5"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/BookImage"
+        app:layout_constraintTop_toBottomOf="@+id/BookAuthor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
